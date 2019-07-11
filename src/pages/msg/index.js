@@ -1,11 +1,14 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View } from '@tarojs/components'
 import './index.less'
 
 export default class Index extends Component {
 
   config = {
-    navigationBarTitleText: '首页'
+    navigationBarTitleText: '首页',
+    // usingComponents: {
+    //   'van-button': '../../components/vant-weapp/button/index'
+    // },
   }
 
   componentWillMount () { }
@@ -20,8 +23,7 @@ export default class Index extends Component {
 
   render () {
     return (
-      <View className='index'>
-        <Text>Hello world!</Text>
+      <View className='msg'>
         <van-button>我是按钮</van-button>
       </View>
     )
