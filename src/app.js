@@ -15,6 +15,9 @@ class App extends Component {
     pages: [
       'pages/index/index'
     ],
+    usingComponents: {
+      'van-button': 'components/vant-weapp/button/index'
+    },
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
